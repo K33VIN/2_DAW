@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC2</title>
+    <style>
+        table{
+            width: 80%;
+            border-collapse: collapse; 
+            margin: 20px auto; 
+        }
+        th,td { 
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle; 
+        }
+        
+        table tr > td:nth-child(1) { 
+            width: 80px; 
+            font-weight: bold; 
+        }
+        table tr > td:nth-child(2) { 
+            width: 120px; 
+        }
+        
+        img{
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redes sociales</h1>
+
+    <table>
+        <tr>
+            <th colspan="2">Nombre</th> 
+            <th>¿Tengo cuenta?</th>
+            <th>Valoración</th>
+            <th>Dirección</th>
+        </tr>
+
+        <tr>
+            <td>
+                Facebook
+            </td>
+            <td>
+                <img src="facebook.png" alt="Facebook">
+            </td>
+
+            <td><input type="checkbox" checked></td>
+            <td>
+                <div class="stars">★★★☆☆</div>
+                2.5 / 5
+            </td>
+            <td><a href="http://www.facebook.com">http://www.facebook.com</a></td>
+        </tr>
+
+        <tr>
+            <td>
+                Flickr
+            </td>
+            <td>
+                <img src="flickr.png" alt="Flickr">
+            </td>
+            <td><input type="checkbox" checked></td>
+            <td>
+                <div class="stars">★★★★☆</div>
+                4.25 / 5
+            </td>
+            <td><a href="http://www.flickr.com">http://www.flickr.com</a></td>
+        </tr>
+
+        <tr>
+            <td>
+                Vimeo
+            </td>
+            <td>
+                <img src="vimeo.png" alt="Vimeo">
+            </td>
+            <td><input type="checkbox"></td>
+            <td>
+                <div class="stars">☆☆☆☆☆</div>
+                Sin valorar todavía
+            </td>
+            <td> <a href="http://www.vimeo.com">http://www.vimeo.com</a></td>
+        </tr>
+
+        <tr>
+            <td>
+                YouTube
+            </td>
+            <td>
+                <img src="youtube.png" alt="YouTube">
+            </td>
+            <td><input type="checkbox" checked></td>
+            <td>
+                <div class="stars">★★★☆☆</div>
+                2.75 / 5
+            </td>
+            <td><a href="http://www.youtube.com">http://www.youtube.com</a></td>
+        </tr>
+    </table>
+</body>
+</html>
