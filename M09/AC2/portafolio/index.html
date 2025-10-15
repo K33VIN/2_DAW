@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal - Kevin Herrera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+    
+    <img src="foto.jpg" alt="Foto de Perfil de Kevin Herrera" class="perfil-foto">
+    
+    <div class="hero-texto">
+        <h2>Hola, soy Kevin Herrera. Desarrollador Web.</h2>
+        <p>Construyendo experiencias digitales funcionales y atractivas.</p>
+    </div>
+    
+</section>
+
+    <section id="proyectos" class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="galeria-proyectos">
+            
+            <article class="proyecto-card">
+                <img src="placeholder-project1.png" alt="Captura de Proyecto E-commerce">
+                <h3>E-commerce Moderno</h3>
+                <p>Tienda online implementada con HTML, CSS Grid y JavaScript.</p>
+            </article>
+
+            <article class="proyecto-card">
+                <img src="placeholder-project2.png" alt="Captura de Blog Personal">
+                <h3>Blog de Tecnología</h3>
+                <p>Plataforma de contenido con diseño totalmente responsive (Flexbox).</p>
+            </article>
+            
+            <article class="proyecto-card">
+                <img src="placeholder-project3.png" alt="Captura de Aplicación de Tareas">
+                <h3>App de Tareas (TODO)</h3>
+                <p>Aplicación para gestionar tareas que usa almacenamiento local del navegador.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+    <h2>Mis Habilidades</h2>
+    <table class="tabla-habilidades">
+        <thead>
+            <tr>
+                <th>Tecnología</th> 
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fab fa-html5"></i> HTML5</td>
+                <td>Estructuración semántica y accesible de contenido.</td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-css3-alt"></i> CSS3</td>
+                <td>Diseño responsivo con Flexbox y Grid, animaciones.</td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-js"></i> JavaScript</td>
+                <td>Lógica de interacción, manipulación del DOM.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section id="contacto" class="contacto">
+        <h2>Ponte en Contacto</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kevin Herrera | Desarrollador Web.</p>
+        <div class="redes-sociales">
+            <a href="https://www.linkedin.com/in/kevin-herrera-dominguez-481516257/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/K33VIN"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
