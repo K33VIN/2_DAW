@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Reproductor Orbital</h1>
+    </header>
+
+    <main>
+        <section class="player-container">
+            <audio id="miAudio" controls>
+                <source src="audio/audio1.wav" type="audio/wav">
+            </audio>
+
+            <div class="controls-grid">
+                <button onclick="playAudio()">Play</button>
+                <button onclick="pauseAudio()">Pausa</button>
+                <button onclick="subirVolumen()">Vol +</button>
+                <button onclick="bajarVolumen()">Vol -</button>
+                <button onclick="adelantar()">+5 seg</button>
+                <button onclick="retroceder()">-5 seg</button>
+                <button onclick="aumentarVelocidad()">velocidad +</button>
+                <button onclick="disminuirVelocidad()">velocidad -</button>
+                <button onclick="muteAudio()">Mute/Unmute</button>
+            </div>
+
+            <p id="info-tiempo"> tiempo actual: 0 seg</p>
+        </section>
+
+        <hr>
+
+        <section class="comparativa">
+            <h2>Comparativa de Formatos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Archivos</th>
+                        <th>Formato</th>
+                        <th>Peso</th>
+                        <th>Calidad / Uso</th>
+                        <th>Reproducir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Audio 1</td>
+                        <td>WAV</td>
+                        <td>49,7 MB</td>
+                        <td>Máxima calidad / Edición / Archivo muy pesado</td>
+                        <td><audio controls src="audio/audio1.wav"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>Audio 2</td>
+                        <td>Mp3 (128kbps)</td>
+                        <td>4,51 MB</td>
+                        <td>Estandar Web / Compatible con todo / Calidad media</td>
+                        <td><audio controls src="audio/audio2.mp3"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>Audio 3</td>
+                        <td>Mp3 (64kbps)</td>
+                        <td>2,25 MB</td>
+                        <td>Baja calidad / Voz o podcasts / Carga muy rapida</td>
+                        <td><audio controls src="audio/audio3.mp3"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>Audio 4</td>
+                        <td>Ogg</td>
+                        <td>5,54 MB</td>
+                        <td>Mejor calidad que un MP3 / Codigo abierto / Muy usado en juegos y webs modernas</td>
+                        <td><audio controls src="audio/audio4.ogg"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>Audio 5</td>
+                        <td>Flac</td>
+                        <td>33,6 MB</td>
+                        <td>Compresion sin perdida / Archivo de alta fidelidad</td>
+                        <td><audio controls src="audio/audio5.flac"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>Audio 6</td>
+                        <td>M4a AAC</td>
+                        <td>9,37 MB</td>
+                        <td>Mejor calidad que MP3 pesando lo mismo / Estandar de Apple</td>
+                        <td><audio controls src="audio/audio6.m4a"></audio></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
