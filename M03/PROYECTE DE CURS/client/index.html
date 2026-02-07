@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Ropa</h1>
+    </header>
+
+    <main>
+        <section id="gestion-producto">
+            <h2>Gestionar Catálogo</h2>
+            <form id="formulario-producto">
+                <fieldset style="border: none; padding: 0;">
+                    <div class="campo">
+                        <label for="nombre">Nombre del producto:</label>
+                        <input type="text" id="nombre" name="nombre" 
+                               placeholder="Ej: HOODIE VINTAGE" 
+                               pattern="^[a-zA-Z0-9 ]{3,50}$" 
+                               title="Debe tener entre 3 y 50 caracteres (letras y números)" 
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="precio">Precio (€):</label>
+                        <input type="number" id="precio" name="precio" 
+                               step="0.01" min="0.01" max="9999" 
+                               placeholder="0.00" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion" 
+                                  placeholder="Detalles del producto (material, corte...)" 
+                                  maxlength="255"></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="imagen">Nombre del archivo de imagen (en carpeta recursos):</label>
+                        <input type="text" id="imagen" name="imagen" 
+                            placeholder="ejemplo: camiseta_azul.jpg" 
+                            required>
+                    </div>
+
+                    <button type="submit" id="btn-guardar">Publicar Artículo</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="lista-catalogo">
+            <h2>Productos en Stock</h2>
+            <div id="contenedor-productos" class="grid-layout">
+                <p>Cargando productos...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto M03</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
