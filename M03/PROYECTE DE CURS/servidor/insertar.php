@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
     $precio = mysqli_real_escape_string($conexion, $_POST['precio']);
     $descripcion = mysqli_real_escape_string($conexion, $_POST['descripcion']);
-    // Este es el nombre del archivo que el usuario escribe (ej: nueva_prenda.jpg)
+    // Este es el nombre del archivo que el usuario escribe (ej: gorra.jpg)
     $imagen = mysqli_real_escape_string($conexion, $_POST['imagen']);
 
     // Query actualizada para incluir la columna imagen

@@ -1,5 +1,5 @@
 // LÓGICA DEL FRONTEND - TIENDA DE ROPA
-// Cumple con: Fetch API, JSON, Manipulación del DOM (querySelector) y Eventos.
+// Cumple con: Fetch API, JSON, Manipulación del DOM (querySelector) y Eventos
 
 // 1. Esperar a que el DOM esté listo (Requisito RA3)
 window.addEventListener('load', () => {
@@ -34,7 +34,7 @@ async function obtenerProductos() {
             const card = document.createElement('div');
             card.classList.add('producto-card');
 
-            // IMPORTANTE: Ahora pasamos item.imagen a la función prepararEdicion
+            // IMPORTANTE: Ahora pasamos item.imagen, nombre, descripcion y precio a la función prepararEdicion
             card.innerHTML = `
                 <div class="img-container">
                     <img src="../recursos/${item.imagen}" alt="${item.nombre}" style="width:100%; height:100%; object-fit:cover;">
